@@ -1,0 +1,5 @@
+#divCerveja {
+   opacity: 0;
+   transition: opacity 0.5s ease; /* duração do fade */
+   font-size: 2em;
+}

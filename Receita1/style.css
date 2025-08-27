@@ -1,0 +1,58 @@
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between; /* título à esquerda, menu à direita */
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+/* Menu */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ddd; /* muda a cor ao passar o mouse */
+}
+
+/* Conteúdo */
+main {
+  padding: 20px;
+}
+
+
+.fancy-table {
+  display: inline-block; /* deixa as tabelas lado a lado */
+  margin: 10px; /* espaço entre elas */
+  border-collapse: collapse;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.fancy-table th {
+  background-color: #4CAF50; /* Verde */
+  color: white; /* Texto branco */
+  text-align: left;
+  padding: 12px;
+}
+
+.fancy-table td {
+  background-color: white; /* Fundo branco */
+  color: black; /* Texto preto */
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.container-tables {
+  text-align: center;
+}

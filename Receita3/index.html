@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Div do botão -->
+   <div id="divBotao">
+      <button id="botaoCarregar">Carregar/Remover Cerveja</button>
+   </div>
+
+   <!-- Div que exibirá o nome da cerveja -->
+   <div id="divCerveja"></div>
+
+   <script>
+      let mostrando = false; // Controle do estado
+
+      function alternarCerveja() {
+         let divCerveja = document.getElementById("divCerveja");
+
+         if (!mostrando) {
+            // Fade in com conteúdo
+            divCerveja.style.opacity = 0; // garante que comece invisível
+            divCerveja.innerHTML = `<h1>Guinness</h1>`;
+            setTimeout(() => {
+               divCerveja.style.opacity = 1; // fade in
+            }, 50);
+            mostrando = true;
+         } else {
+            // Fade out
+            divCerveja.style.opacity = 0;
+            setTimeout(() => {
+               divCerveja.innerHTML = "";
+            }, 500); // duração do fade
+            mostrando = false;
+         }
+      }
+
+      let botao = document.getElementById("botaoCarregar");
+      botao.addEventListener("click", alternarCerveja);
+   </script>
+</body>
+</html>

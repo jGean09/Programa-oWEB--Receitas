@@ -1,0 +1,62 @@
+p.verso{ 
+   color: blue;
+}
+p.mote{ 
+   color: red;
+}
+.linkjoao:link {
+    color: blue;      /* Cor do link não visitado */
+    text-decoration: none;
+}
+.linkjoao:visited {
+    color: black;    /* Cor do link visitado */
+}
+.linkjoao:hover {
+    color: red;       /* Cor quando o mouse passa por cima */
+    text-decoration: underline;
+}
+.linkjoao:active {
+    color: orange;    /* Cor durante o clique */
+}
+.poeta img {
+    width: 100px;        
+    height: 100px;       
+    border-radius: 50%;  
+    object-fit: cover;   
+    margin-right: 10px;  
+    vertical-align: middle; 
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;   /* Cor de fundo */
+    padding: 10px 0;
+}
+
+/* Menu de navegação */
+header nav ul.menu {
+    list-style-type: none;    
+    margin: 0;
+    padding: 0;
+    display: flex;            
+    justify-content: center;  
+}
+
+/* Itens do menu */
+header nav ul.menu li {
+    margin: 0 20px;
+}
+
+/* Links do menu */
+header nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+/* Hover nos links */
+header nav ul.menu li a:hover {
+    color: #ffcc00;  
+}
+

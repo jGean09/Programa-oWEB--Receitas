@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="divBotao">
+      <button id="botaoCarregar">Carregar Cervejas</button>
+      <button id="botaoOrdenar">Mostrar Cervejas Ordenadas</button>
+      <button id="botaoEmbaralhar">Embaralhar Cervejas</button>
+   </div>
+
+   <div id="meuAmor"></div>
+
+   <script>
+      let cervejas = ["Guinness", "Desperados", "Becks", "Teste"];
+
+      // Função para criar tabela
+      function gerarTabela(cervejasArray) {
+         let tabelaHTML = `<table>
+                               <tr><th>Cervejas</th></tr>`;
+         cervejasArray.forEach(cerveja => {
+            tabelaHTML += `<tr><td>${cerveja}</td></tr>`;
+         });
+         tabelaHTML += `</table>`;
+         return tabelaHTML;
+      }
+
+      // Carregar lista original
+      document.getElementById("botaoCarregar").addEventListener("click", () => {
+         document.getElementById("meuAmor").innerHTML = gerarTabela(cervejas);
+      });
+
+      // Ordenar alfabeticamente
+      document.getElementById("botaoOrdenar").addEventListener("click", () => {
+         let cervejasOrdenadas = [...cervejas].sort();
+         document.getElementById("meuAmor").innerHTML = gerarTabela(cervejasOrdenadas);
+      });
+
+      // Embaralhar
+      document.getElementById("botaoEmbaralhar").addEventListener("click", () => {
+         let cervejasEmbaralhadas = [...cervejas].sort(() => Math.random() - 0.5);
+         document.getElementById("meuAmor").innerHTML = gerarTabela(cervejasEmbaralhadas);
+      });
+   </script>
+</body>
+</html>

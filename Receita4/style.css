@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Estilo das células e linhas */
+th, td {
+    border: 2px solid #ccc;
+    padding: 12px;
+    text-align: center;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+tr:hover td {
+    background-color: #e0f7fa;
+    transform: translateY(-2px);
+}
+
+th {
+    background-color: #00796b;
+    color: white;
+    font-size: 1.2em;
+}

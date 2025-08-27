@@ -1,0 +1,63 @@
+/* Estilo geral da tabela */
+table {
+    border-collapse: collapse; 
+    width: 50%;                
+    margin: 20px 0;            
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do cabeçalho da tabela */
+th {
+    background-color: #4CAF50; /* Verde */
+    color: white;              
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilo das células da tabela */
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Links dentro da tabela */
+td a {
+    color: blue;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+/* Cabeçalho */
+header {
+    background-color: #333;   
+    padding: 10px 0;
+}
+
+/* Menu de navegação */
+header nav ul.menu {
+    list-style-type: none;    
+    margin: 0;
+    padding: 0;
+    display: flex;            
+    justify-content: center;  
+}
+
+/* Itens do menu */
+header nav ul.menu li {
+    margin: 0 20px;
+}
+
+/* Links do menu */
+header nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+/* Hover nos links */
+header nav ul.menu li a:hover {
+    color: #ffcc00;  
+}
