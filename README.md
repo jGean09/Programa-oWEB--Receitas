@@ -10,10 +10,7 @@ Aqui você encontrará **4 receitas** que ensinam conceitos fundamentais e bási
 **Principais termos técnicos:** HTML, marca/tag, propriedade.  
 **Requisitos para executar as instruções:** Editor de texto e navegador.  
 **Requisitos para compreensão:** Nenhum.  
-**Como ler:**  
-- Instruções que requerem ação no computador → cor azul.  
-- Comentários sobre os passos → fonte normal, cor preta.  
-- Comandos, código-fonte ou termos técnicos → fonte diferenciada.  
+
 
 ---
 
@@ -22,7 +19,7 @@ Aqui você encontrará **4 receitas** que ensinam conceitos fundamentais e bási
 **Principais termos técnicos:** HTML, CSS, classe, marca, propriedade.  
 **Requisitos para executar as instruções:** Editor de texto.  
 **Requisitos para compreensão:** Noções básicas de HTML.  
-**Como ler:** Mesma convenção de cores e fontes da Receita 1.  
+
 
 ---
 
@@ -31,7 +28,7 @@ Aqui você encontrará **4 receitas** que ensinam conceitos fundamentais e bási
 **Principais termos técnicos:** HTML, JavaScript, `function`, `let`, `div`, `button`, `onclick`.  
 **Requisitos para executar as instruções:** Editor de texto.  
 **Requisitos para compreensão:** Noções básicas de HTML.  
-**Como ler:** Mesma convenção de cores e fontes das receitas anteriores.  
+  
 
 ---
 
@@ -40,7 +37,7 @@ Aqui você encontrará **4 receitas** que ensinam conceitos fundamentais e bási
 **Principais termos técnicos:** HTML, JavaScript, `map`, `join`, `function`, `let`.  
 **Requisitos para executar as instruções:** Editor de texto e navegador.  
 **Requisitos para compreensão:** Noções básicas de HTML e JS.  
-**Como ler:** Mesma convenção de cores e fontes das receitas anteriores.  
+
 
 ---
 
