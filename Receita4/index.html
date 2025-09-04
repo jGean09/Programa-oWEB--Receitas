@@ -2,46 +2,47 @@
 <html>
 <head>
    <meta charset="UTF-8">
-   <link rel="stylesheet" href="style.css">
+   <title>Refatoração Simples</title>
 </head>
 <body>
-   <div id="divBotao">
-      <button id="botaoCarregar">Carregar Cervejas</button>
-      <button id="botaoOrdenar">Mostrar Cervejas Ordenadas</button>
-      <button id="botaoEmbaralhar">Embaralhar Cervejas</button>
+   <!-- Links para ações -->
+   <div id="divLinks">
+      <a href="#" id="linkCarregar">Carregar Sorvetes</a> |
+      <a href="#" id="linkOrdenar">Mostrar Sorvetes Ordenados</a> |
+      <a href="#" id="linkEmbaralhar">Embaralhar Sorvetes</a>
    </div>
 
    <div id="meuAmor"></div>
 
    <script>
-      let cervejas = ["Guinness", "Desperados", "Becks", "Teste"];
+      const sorvetes = ["Flocos", "Chocolate", "Morango", "Napolitano"];
 
-      // Função para criar tabela
-      function gerarTabela(cervejasArray) {
-         let tabelaHTML = `<table>
-                               <tr><th>Cervejas</th></tr>`;
-         cervejasArray.forEach(cerveja => {
-            tabelaHTML += `<tr><td>${cerveja}</td></tr>`;
-         });
+      // Função para criar tabela (arrow function)
+      const gerarTabela = itens => {
+         let tabelaHTML = `<table><tr><th>Sorvetes</th></tr>`;
+         itens.forEach(item => tabelaHTML += `<tr><td>${item}</td></tr>`);
          tabelaHTML += `</table>`;
          return tabelaHTML;
       }
 
       // Carregar lista original
-      document.getElementById("botaoCarregar").addEventListener("click", () => {
-         document.getElementById("meuAmor").innerHTML = gerarTabela(cervejas);
+      document.getElementById("linkCarregar").addEventListener("click", e => {
+         e.preventDefault();
+         document.getElementById("meuAmor").innerHTML = gerarTabela(sorvetes);
       });
 
       // Ordenar alfabeticamente
-      document.getElementById("botaoOrdenar").addEventListener("click", () => {
-         let cervejasOrdenadas = [...cervejas].sort();
-         document.getElementById("meuAmor").innerHTML = gerarTabela(cervejasOrdenadas);
+      document.getElementById("linkOrdenar").addEventListener("click", e => {
+         e.preventDefault();
+         const sorvetesOrdenados = [...sorvetes].sort();
+         document.getElementById("meuAmor").innerHTML = gerarTabela(sorvetesOrdenados);
       });
 
       // Embaralhar
-      document.getElementById("botaoEmbaralhar").addEventListener("click", () => {
-         let cervejasEmbaralhadas = [...cervejas].sort(() => Math.random() - 0.5);
-         document.getElementById("meuAmor").innerHTML = gerarTabela(cervejasEmbaralhadas);
+      document.getElementById("linkEmbaralhar").addEventListener("click", e => {
+         e.preventDefault();
+         const sorvetesEmbaralhados = [...sorvetes].sort(() => Math.random() - 0.5);
+         document.getElementById("meuAmor").innerHTML = gerarTabela(sorvetesEmbaralhados);
       });
    </script>
 </body>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Exercício Refatorado</title>
+   </head>
+   <body>
+      <!-- Link para carregar os itens -->
+      <div><a href="#" id="linkCarregar">Carregar sorvetes...</a></div>
+      <div id="meu-amor"></div>
+
+      <script>
+         // Array de exemplo com sorvetes
+         const sorvetes = ["Flocos", "Chocolate", "Morango", "Napolitano"];
+
+         // Função arrow que recebe um array e carrega a div
+         const carregarDiv = itens => {
+            const div = document.getElementById("meu-amor");
+            const itensHtml = itens.map(item => `<h1>${item}</h1>`);
+            div.innerHTML = itensHtml.join("\n");
+         }
+
+         // Pega o link e adiciona o evento de clique
+         const link = document.getElementById("linkCarregar");
+         link.addEventListener("click", e => {
+            e.preventDefault(); // evita que o link navegue
+            carregarDiv(sorvetes);
+         });
+      </script>
+   </body>
+</html>
+    
